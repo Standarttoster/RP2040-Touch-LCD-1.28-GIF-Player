@@ -6,7 +6,7 @@ This is specificly made for [this board](https://www.waveshare.com/rp2040-touch-
 # Table of Contents
 1. [Setup](#setup)
 2. [Edit the code](#edit)
-3. [Third Example](#brightness)
+3. [Changeing the brightness of the screen](#brightness)
 
 
 # Setting Up the RP2040 with 1.28" Display <a name="setup"></a>
