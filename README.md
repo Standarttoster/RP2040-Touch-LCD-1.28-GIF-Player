@@ -1,8 +1,15 @@
 ## RP2040-Touch-LCD-1.28-GIF-Player
 Enables the RP2040-Touch-LCD-1.28 to play multible GIFs using circuitpython
 
+This is specificly made for [this board](https://www.waveshare.com/rp2040-touch-lcd-1.28.htm), I can't promise it will work for different screens or chipsets
 
-# Setting Up the RP2040 with 1.28" Display
+# Table of Contents
+1. [Setup](#setup)
+2. [Edit the code](#edit)
+3. [Third Example](#brightness)
+
+
+# Setting Up the RP2040 with 1.28" Display <a name="setup"></a>
 
 Follow these steps to install and set up the firmware on your RP2040 with a 1.28" display.
 
@@ -55,7 +62,7 @@ After completing these steps, the display should begin to play the GIFs in seque
 
 ---
 
-# Editing the code
+# Editing the code <a name="edit"></a>
 
 I'm not a professional coder, but I tried my best to make this work as well as I could. So if you have improvements for it let me know
 
@@ -89,7 +96,7 @@ I'm not a professional coder, but I tried my best to make this work as well as I
 
 ---
 
-# Changeing the brightness of the screen:
+# Changeing the brightness of the screen: <a name="brightness"></a>
 
 You need to have thonny and the code open for you to change the brightness of the screen
 
