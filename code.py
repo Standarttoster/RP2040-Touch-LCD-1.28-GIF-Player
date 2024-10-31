@@ -6,6 +6,7 @@ import pwmio
 import gifio
 import displayio
 import struct
+import os  # Add os to import list
 from gc9a01 import GC9A01
 import cst816
 
@@ -20,8 +21,8 @@ pin_mosi = board.LCD_DIN
 pin_reset = board.LCD_RST
 pin_backlight = board.LCD_BL
 
-# List of GIF files
-gif_files = ["/1.gif", "/2.gif", "/3.gif", "/4.gif", "/5.gif"]  # Add as many GIF files as you like here
+# Automatically detect GIF files in the main directory
+gif_files = [f"/{file}" for file in os.listdir("/") if file.endswith(".gif")]
 current_gif_index = 0  # Current GIF in the list
 
 # Setup display
@@ -61,8 +62,9 @@ def load_gif(file_path):
     )
     splash.append(face)
 
-# Load the first GIF first
-load_gif(gif_files[current_gif_index])
+# Load the first GIF if any are found
+if gif_files:
+    load_gif(gif_files[current_gif_index])
 
 # Timing for the frames
 start = time.monotonic()
@@ -110,3 +112,4 @@ while True:
         gc.collect()
         current_gif_index = (current_gif_index + 1) % len(gif_files)
         load_gif(gif_files[current_gif_index])
+
