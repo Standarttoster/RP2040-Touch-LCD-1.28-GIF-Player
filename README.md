@@ -24,8 +24,8 @@ Place your desired GIF files on the **CIRCUITPY** drive.
 
 > **Note:** This code version requires exactly **5 GIF files** to avoid crashes.
 
-### 6. Rename GIF Files
-Rename the GIF files in sequence as follows:
+### 6. Rename GIF Files (optional)
+The Display works no mater the names of the GIF, but if you want a certain order rename the GIF files as follows:
 - `1.gif`
 - `2.gif`
 - `3.gif`
